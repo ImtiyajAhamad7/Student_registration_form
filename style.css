@@ -1,4 +1,4 @@
-/* Styles for making the table responsive */
+
 /* Main container */
 .main {
     /* position: fixed; */
@@ -94,7 +94,7 @@ h1 {
 
 .active{
     display: block !important;
-    
+  
 }
 
 .blur{
@@ -130,6 +130,7 @@ h1 {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
 }
 
 .submitForm input[type="submit"] {
