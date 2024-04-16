@@ -1,0 +1,187 @@
+/* Styles for making the table responsive */
+/* Main container */
+.main {
+    /* position: fixed; */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Button style */
+.modalToggle {
+    display: block;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 1rem;
+}
+
+.modalToggle:hover {
+    background-color: #45a049;
+}
+
+/* Table style */
+
+.table {
+    height: 70vh;
+    overflow: scroll; /* Add scrollbar when needed */
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Table hover effect */
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Actions column */
+.table td:last-child {
+    white-space: nowrap; /* Prevent line break for buttons */
+}
+
+/* Button style for actions */
+.btn-edit, .btn-delete {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-delete{
+    background-color: tomato !important;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    background-color: #0b7dda;
+}
+
+/* Space between buttons */
+.btn-edit + .btn-delete {
+    margin-left: 5px;
+}
+
+
+.active{
+    display: block !important;
+    
+}
+
+.blur{
+ filter: blur(5px);
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+  height: 100%;
+ background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+ z-index: 9999; /* ensure the overlay is above other elements */
+ display: none; /* initially hidden */
+ 
+}
+
+.form-card {
+    display: none;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.submitForm input[type="text"], 
+.submitForm input[type="email"],
+.submitForm input[type="number"],
+.submitForm input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submitForm input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submitForm input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .table table {
+        border-collapse: collapse;
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .table table thead,
+    .table table tbody,
+    .table table th,
+    .table table td,
+    .table table tr {
+        display: block;
+    }
+
+    .table table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+    }
+
+    .table table td {
+        text-align: center;
+        border-bottom: 0;
+    }
+
+    .table table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+
+    .form-card {
+        max-width: 90%;
+    }
+}

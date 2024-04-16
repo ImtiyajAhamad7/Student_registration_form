@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration Form ">
+    <meta name="keywords" content="Student, College, Registration">
+    <meta name="author" content="imtiyaj Ahamad">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Student Registration Form </h1>
+    
+    
+    <div class="main">
+         <Button class="modalToggle">Register</Button>
+
+         
+
+          <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody >
+
+                </tbody>
+            </table>
+          </div>
+    </div>
+
+    <!-- table ends here -->
+   
+    <div class="form-card" >
+        <form action="" class="submitForm" id="myForm" onsubmit="handleOnSubmit()" >
+           
+            <input type="number" placeholder="Id" name="id" class="id">
+            <input type="text" placeholder="Name" name="name" class="name">
+            <input type="email" placeholder="Email" name="email" class="email">
+            <input type="number" placeholder="Contact" name="contact" class="contact">
+            <input type="submit" value="Submit"  >
+        </form>
+    </div>
+    
+
+    <script src="action.js"></script>
+</body>
+</html>
